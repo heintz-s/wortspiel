@@ -1,0 +1,60 @@
+[gd_scene format=3 uid="uid://62pahgv6jl6b"]
+
+[ext_resource type="Script" uid="uid://b7cedv8j1mpmy" path="res://main.gd" id="1_ig7tw"]
+
+[node name="Main" type="Control" unique_id=58570821]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_ig7tw")
+
+[node name="MarginContainer" type="MarginContainer" parent="." unique_id=2089590928]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_constants/margin_left = 20
+theme_override_constants/margin_top = 20
+theme_override_constants/margin_right = 20
+theme_override_constants/margin_bottom = 20
+
+[node name="VBoxContainer" type="VBoxContainer" parent="MarginContainer" unique_id=1507518375]
+layout_mode = 2
+
+[node name="StatusLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=1900724568]
+layout_mode = 2
+text = "Wortspiel"
+
+[node name="ServerUrlInput" type="LineEdit" parent="MarginContainer/VBoxContainer" unique_id=712381559]
+layout_mode = 2
+text = "wss://deno-wordgame.heintz-s.deno.net/"
+
+[node name="NameInput" type="LineEdit" parent="MarginContainer/VBoxContainer" unique_id=1633349936]
+layout_mode = 2
+placeholder_text = "Gib einen Namen ein"
+
+[node name="ConnectButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=553696829]
+layout_mode = 2
+text = "Connect"
+
+[node name="HSeparator" type="HSeparator" parent="MarginContainer/VBoxContainer" unique_id=97362298]
+layout_mode = 2
+
+[node name="DisplayTextLabel" type="Label" parent="MarginContainer/VBoxContainer" unique_id=2076509631]
+layout_mode = 2
+
+[node name="InputText" type="LineEdit" parent="MarginContainer/VBoxContainer" unique_id=858020458]
+layout_mode = 2
+
+[node name="SubmitButton" type="Button" parent="MarginContainer/VBoxContainer" unique_id=599623516]
+layout_mode = 2
+text = "Submit"
+
+[node name="ResultLabel" type="RichTextLabel" parent="MarginContainer/VBoxContainer" unique_id=1627956300]
+custom_minimum_size = Vector2(0, 200)
+layout_mode = 2
